@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CreateQuoteComponent } from './create-quote.component';
+import { PopupContentComponent } from '../popup-content/popup-content.component';
+import { PopupFooterComponent } from '../popup-footer/popup-footer.component';
+import { FormsModule } from '@angular/forms';
 
 describe('CreateQuoteComponent', () => {
   let component: CreateQuoteComponent;
@@ -8,7 +11,8 @@ describe('CreateQuoteComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CreateQuoteComponent]
+      declarations: [CreateQuoteComponent,PopupContentComponent,PopupFooterComponent],
+      imports : [FormsModule]
     });
     fixture = TestBed.createComponent(CreateQuoteComponent);
     component = fixture.componentInstance;

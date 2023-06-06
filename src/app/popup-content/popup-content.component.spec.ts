@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PopupContentComponent } from './popup-content.component';
+import { FormsModule } from '@angular/forms';
 
 describe('PopupContentComponent', () => {
   let component: PopupContentComponent;
@@ -8,7 +9,8 @@ describe('PopupContentComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PopupContentComponent]
+      declarations: [PopupContentComponent],
+      imports :[FormsModule]
     });
     fixture = TestBed.createComponent(PopupContentComponent);
     component = fixture.componentInstance;
